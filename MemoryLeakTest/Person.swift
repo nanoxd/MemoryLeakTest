@@ -16,6 +16,7 @@ class Person {
     self.name = name
 
     actionClosure = {
+      [unowned self] () -> () in
       println("I am \(self.name)")
     }
   }
